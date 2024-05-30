@@ -1,0 +1,160 @@
+{
+  "React: Component": {
+    "prefix": "rc",
+    "body": [
+			"import React from 'react'",
+			"",
+      "export const $1 = () => {",
+      "  return <div></div>",
+      "}",
+      ""
+    ],
+    "description": "React: Component - $1 is the component name"
+  },
+  "React: Function component": {
+    "prefix": "rfc",
+    "body": [
+			"import React from 'react'",
+			"",
+      "export function $1() {",
+      "  return <div></div>",
+      "}",
+      ""
+    ],
+    "description": "React: Funcitonal component - $1 is the component name"
+  },
+	"React: Component with props": {
+    "prefix": "rcp",
+    "body": [
+			"import React from 'react'",
+			"",
+      "type $1Props = {",
+			"  $2",
+			"}",
+      "",
+      "export const $1 = (_: $1Props) => {",
+      "  return <div></div>",
+      "}",
+      "",
+      "export default $1",
+			""
+    ],
+    "description": "React: Component with props - $1 is the component name, $2 is the props"
+  },
+	"React: Function component with props": {
+    "prefix": "rfcp",
+    "body": [
+			"import React from 'react'",
+			"",
+      "type $1Props = {",
+			"  $2",
+			"}",
+      "",
+      "export function $1(_: $1Props) {",
+      "  return <div></div>",
+      "}",
+      "",
+      "export default $1",
+			""
+    ],
+    "description": "React: Funcitonal component with props - $1 is the component name, $2 is the props"
+  },
+	"Testing Library: Test describe": {
+    "prefix": "rtld",
+    "body": [
+			"import { cleanup, render } from '@testing-library/react'",
+			"",
+      "describe('$1', () => {",
+			"  afterEach(cleanup)",
+			"",
+      "  it('should render correctly', () => {",
+      "    const { container } = render(<$1 />)",
+			"",
+			"    expect(container).toBeInTheDocument()",
+			"  })",
+			"})",
+			""
+    ],
+    "description": "Testing Library: Test describe case"
+  },
+	"Testing Library: Test it": {
+    "prefix": "rtli",
+    "body": [
+      "it('should render correctly', () => {",
+      "  const { container } = render(<$1 />)",
+			"",
+			"  expect(container).toBeInTheDocument()",
+			"})",
+			""
+    ],
+    "description": "Testing Library: Test it case - $1 is the component name"
+  },
+	"Testing Library: Simple it each": {
+    "prefix": "rtlie",
+    "body": [
+			"const cases = [{ disabled: true, name: '$1' }, { className: 'p-4' }]",
+			"",
+			"it.each(cases)('should render correctly with props', props => {",
+      "  const { container } = render(<$1 {...props} />)",
+			"",
+			"  expect(container).toBeInTheDocument()",
+			"})",
+			""
+    ],
+    "description": "Testing Library: Test it.each case. - $1 is the component name"
+  },
+	"Typescript: Arrow function": {
+    "prefix": "tsa",
+    "body": [
+      "const $1 = ($2) => {",
+      "  return",
+			"}",
+			""
+    ],
+    "description": "Typescript: Arrow function with params - $1 is the function name, $2 is the params"
+  },
+	"Typescript: Function": {
+    "prefix": "tsf",
+    "body": [
+      "function $1($2) {",
+      "  return",
+			"}",
+			""
+    ],
+    "description": "Typescript: Function with params"
+  },
+	"Typescript: Type": {
+    "prefix": "tst",
+    "body": [
+      "type $1 = {",
+      "  $2",
+			"}",
+			""
+    ],
+    "description": "Typescript: Type - $1 is the type name, $2 is the type properties"
+  },
+	"Typescript: Interface": {
+    "prefix": "tsi",
+    "body": [
+      "interface $1 {",
+      "  $2",
+			"}",
+			""
+    ],
+    "description": "Typescript: Interface - $1 is the interface name, $2 is the interface properties"
+  },
+  "Import: React": {
+    "prefix": "ir",
+    "body": [
+      "import React from 'react'",
+			"",
+    ],
+  },
+  "Import: Testing Library": {
+    "prefix": "irtl",
+    "body": [
+      "import { cleanup, render } from '@testing-library/react'",
+			"",
+    ],
+  },
+}
