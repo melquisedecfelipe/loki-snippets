@@ -1,0 +1,43 @@
+{
+  "name": "loki-snippets",
+  "displayName": "Loki Snippets",
+  "description": "A snippets to use on React ecosystem",
+  "version": "0.0.1",
+  "publisher": "Outbound",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melquisedecfelipe/loki-snippets"
+  },
+  "bugs": {
+    "type": "git",
+    "url": "https://github.com/melquisedecfelipe/loki-snippets"
+  },
+  "homepage": "https://github.com/melquisedecfelipe/loki-snippets",
+  "galleryBanner": {
+    "color": "#eee",
+    "theme": "light"
+  },
+  "icon": "logo/theme-icon.png",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "loki",
+    "react",
+    "typescript",
+    "javascript",
+    "react-testing-library",
+    "jest"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "react",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
