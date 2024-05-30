@@ -2,7 +2,7 @@
   "name": "loki-snippets",
   "displayName": "Loki Snippets",
   "description": "A snippets to use on React ecosystem",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Outbound",
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "react",
+        "language": "javascript,typescript",
         "path": "./snippets/snippets.code-snippets"
       }
     ]
